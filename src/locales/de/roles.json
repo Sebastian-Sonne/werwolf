@@ -1,0 +1,10 @@
+{
+  "witch": {
+    "name": "Hexe",
+    "prompt": "Wähle einen Spieler zum Heilen oder Vergiften."
+  },
+  "seer": {
+    "name": "Seherin",
+    "prompt": "Wähle einen Spieler, dessen Rolle du sehen möchtest."
+  }
+}

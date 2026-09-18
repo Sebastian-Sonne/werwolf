@@ -6,8 +6,8 @@ export function SettingsStep({ onStartGame, onBack }: { onStartGame: () => void,
 
   return (
     <SetupTabCard
-      title={t("setup.players.title", "Spieler")}
-      description={t("setup.players.desc", "Spieler hinzufügen oder entfernen.")}
+      title={t("setup.players.title", "Einstellungen")}
+      description={t("setup.players.desc", "Spieleinstellungen bearbeiten.")}
       onNext={onStartGame}
       onBack={onBack}
     >

@@ -25,7 +25,7 @@ function RouteComponent() {
   }
 
   return (
-    <div className="max-w-md mx-auto p-2 sm:p-4 space-y-4">
+    <div className="max-w-lg mx-auto p-2 sm:p-4 space-y-4">
       <Tabs value={tab} onValueChange={(v) => setTab(v as SetupTab)}>
         <TabsList className="w-full">
           <TabsTrigger value="players" className="flex items-center gap-2">
@@ -42,9 +42,8 @@ function RouteComponent() {
           </TabsTrigger>
         </TabsList>
 
-        {/* 3. Clean Modular Step Rendering */}
         <div className="mt-4">
-          {tab === "players" && <PlayersStep onNext={() => setTab("roles")} />}
+          {tab === "players" && <PlayersStep onNext={() => setTab("roles")} onBack={() => navigate({to: "/"})}  />}
           {tab === "roles" && (
             <RolesStep
               onBack={() => setTab("players")}

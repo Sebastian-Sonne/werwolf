@@ -6,8 +6,8 @@ export function RolesStep({ onNext, onBack }: { onNext: () => void, onBack: () =
 
   return (
     <SetupTabCard
-      title={t("setup.players.title", "Spieler")}
-      description={t("setup.players.desc", "Spieler hinzufügen oder entfernen.")}
+      title={t("setup.players.title", "Rollen")}
+      description={t("setup.players.desc", "Rollen auswählen oder erstellen.")}
       onNext={onNext}
       onBack={onBack}
     >

@@ -6,7 +6,7 @@ export const Route = createFileRoute('/setup')({
 
 function RouteComponent() {
   return (
-    <div className='m-4 flex justify-center items-center'>
+    <div className='m-4'>
         <Outlet />
     </div>
   )
